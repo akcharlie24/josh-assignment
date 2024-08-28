@@ -1,0 +1,480 @@
+#modal-wrapper {
+  display: none;
+  justify-content: center;
+  padding-top: 60px;
+  position: fixed;
+  z-index: 5000;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  /* Info details */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 28px;
+  gap: 30px;
+
+  width: 833px;
+  height: 894.65px;
+
+  /* White */
+  background: #ffffff;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.modal h2 {
+  /* Add skill */
+
+  width: 189px;
+  height: 54px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 123.6%;
+  /* or 54px */
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#domain-section {
+  /* Domain Section */
+
+  /* Auto layout */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+
+  width: 777px;
+  height: 120.15px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#domain-label {
+  /* Frame 274 */
+
+  width: 777px;
+  height: 32.15px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  /* Domain */
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+  /* identical to box height, or 28px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+
+#domain-input {
+  /* Domain Input */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  /* Rectangle 59 */
+
+  position: absolute;
+  width: 777px;
+  height: 74px;
+  left: 0px;
+  top: 46.15px;
+
+  background: #f0f0f6;
+  border-radius: 5px;
+  border: none;
+
+  padding-left: 26.54px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  /* or 22px */
+  text-transform: capitalize;
+
+  color: rgba(43, 43, 43, 0.5);
+}
+
+.skills-section {
+  /* Skills Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+
+  width: 777px;
+  height: 507.5px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.skills-section h3 {
+  /* Frame 273 */
+
+  /* Auto layout */
+  padding: 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  /* Skills */
+
+  width: 777px;
+  height: 27.5px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  /* or 26px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#skills-inputSection {
+  /* Frame 271 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 777px;
+  height: 466px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#skills-heading {
+  /* Skill/Proficiency */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 590px;
+
+  width: 777px;
+  height: 22px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.skill-heading {
+  /* Frame 272 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 36px;
+  height: 22px;
+
+  /* H4 - 18px */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  /* or 22px */
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.proficiency-heading {
+  /* Frame 271 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 140px;
+  height: 22px;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.25px;
+  text-align: left;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#skill-inputs {
+  /* Inputs */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 777px;
+  height: 434px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.input-group {
+  /* Input Group */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 777px;
+  height: 74px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.skill-input {
+  width: 606.66px;
+  height: 74px;
+
+  background: #f0f0f6;
+  border-radius: 5px;
+
+  border: none;
+
+  text-transform: capitalize;
+
+  padding: 20px;
+  font-family: "Inter";
+  font-size: 18px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.skill-proficiency {
+  width: 150.34px;
+  height: 74px;
+
+  background: #f0f0f6;
+  border-radius: 5px;
+
+  padding: 20px;
+  font-family: "Inter";
+  font-size: 18px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: none;
+}
+
+#form-footer {
+  /* Footer */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+
+  width: 777px;
+  height: 51px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+#add-skill-button {
+  /* Add Skill */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 16px;
+  gap: 10px;
+  cursor: pointer;
+
+  width: 151px;
+  height: 51px;
+
+  background: #ffb400;
+  border-radius: 5px;
+  border: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#cancel-skill-button {
+  /* Cancel */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 16px;
+  gap: 10px;
+  cursor: pointer;
+
+  width: 151px;
+  height: 51px;
+
+  /* White */
+  background: #ffffff;
+  border: 1px solid #ff5252;
+  border-radius: 5px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #ff5252;
+}

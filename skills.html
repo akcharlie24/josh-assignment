@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="skill-body">
+    <nav>
+      <img src="assets/MainLogo.svg" alt="logo" />
+      <ul>
+        <li id="home-button">
+          <a href="index.html">Home</a>
+        </li>
+        <li id="skill-button">
+          <a href="skills.html">Skills</a>
+        </li>
+        <li>Education</li>
+        <li>Projects</li>
+        <li>Recommendations</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div id="skills">
+      <div id="skill-heading">
+        <h2>Skills & Languages</h2>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+        </p>
+      </div>
+      <div class="skill-row" id="skill-row1">
+        <div class="skill-card">
+          <div class="skill-content">
+            <h4>Front End Development</h4>
+            <div class="skill-name" style="top: 37.38px">
+              <p>Html</p>
+              <p>90%</p>
+            </div>
+            <div class="line" style="top: 66.67px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 275.98px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 80.81px">
+              <p>CSS</p>
+              <p>85%</p>
+            </div>
+            <div class="line" style="top: 110.11px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 273.34px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 124.25px">
+              <p>Js</p>
+              <p>80%</p>
+            </div>
+            <div class="line" style="top: 153.54px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 265.42px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 167.68px">
+              <p>PHP</p>
+              <p>75%</p>
+            </div>
+            <div class="line" style="top: 196.98px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 246.93px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 211.12px">
+              <p>WordPress</p>
+              <p>85%</p>
+            </div>
+            <div class="line" style="top: 240.41px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 273.34px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-content">
+            <h4>Languages</h4>
+            <div class="skill-name" style="top: 37.38px">
+              <p>Hindi</p>
+              <p>90%</p>
+            </div>
+            <div class="line" style="top: 66.67px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 275.98px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 80.81px">
+              <p>English</p>
+              <p>85%</p>
+            </div>
+            <div class="line" style="top: 110.11px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 273.34px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-content">
+            <h4>Back End Development</h4>
+            <div class="skill-name" style="top: 37.38px">
+              <p>NodeJS</p>
+              <p>90%</p>
+            </div>
+            <div class="line" style="top: 66.67px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 275.98px"></div>
+              </div>
+            </div>
+            <div class="skill-name" style="top: 80.81px">
+              <p>SSR</p>
+              <p>85%</p>
+            </div>
+            <div class="line" style="top: 110.11px">
+              <div class="outer-rect">
+                <div class="completed-bar" style="width: 273.34px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-row" id="skill-row2"></div>
+      <button type="submit" id="add-skill">ADD SKILL</button>
+    </div>
+
+    <div id="modal-wrapper">
+      <form id="addSkillForm" id="skillModal" class="modal">
+        <h2>Add Skill</h2>
+        <div id="domain-section">
+          <label id="domain-label" for="domainName">Domain</label>
+          <input
+            type="text"
+            id="domain-input"
+            name="domainName"
+            required="true"
+            placeholder="Front End Developer"
+          />
+        </div>
+        <div class="skills-section">
+          <h3>Skills</h3>
+          <div id="skills-inputSection">
+            <div id="skills-heading">
+              <div class="skill-heading">Skill</div>
+              <div class="proficiency-heading">Proficiency (%)</div>
+            </div>
+            <div id="skill-inputs">
+              <div class="input-group">
+                <input type="text" class="skill-input" name="skillName1" />
+                <input
+                  type="number"
+                  class="skill-proficiency"
+                  name="skillPercentage1"
+                />
+              </div>
+              <div class="input-group">
+                <input type="text" class="skill-input" name="skillName2" />
+                <input
+                  type="number"
+                  class="skill-proficiency"
+                  name="skillPercentage2"
+                />
+              </div>
+              <div class="input-group">
+                <input type="text" class="skill-input" name="skillName3" />
+                <input
+                  type="number"
+                  class="skill-proficiency"
+                  name="skillPercentage3"
+                />
+              </div>
+              <div class="input-group">
+                <input type="text" class="skill-input" name="skillName4" />
+                <input
+                  type="number"
+                  class="skill-proficiency"
+                  name="skillPercentage4"
+                />
+              </div>
+              <div class="input-group">
+                <input type="text" class="skill-input" name="skillName5" />
+                <input
+                  type="number"
+                  class="skill-proficiency"
+                  name="skillPercentage5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="form-footer">
+          <button type="submit" id="add-skill-button">ADD SKILL</button>
+          <button type="button" id="cancel-skill-button">CANCEL</button>
+        </div>
+      </form>
+    </div>
+    <div id="skill-footer">
+      <div id="skill-logos">
+        <div
+          style="
+            left: 0px;
+            top: 0px;
+            background: url(&quot;assets/logos1.svg&quot;);
+          "
+        ></div>
+        <div
+          style="
+            left: 284px;
+            top: 0px;
+            background: url(&quot;assets/logos2.svg&quot;);
+          "
+        ></div>
+        <div
+          style="
+            left: 561px;
+            top: 0px;
+            background: url(&quot;assets/logos3.svg&quot;);
+          "
+        ></div>
+        <div
+          style="
+            left: 830px;
+            top: 0px;
+            background: url(&quot;assets/logos4.svg&quot;);
+          "
+        ></div>
+      </div>
+      <div id="footer-content">
+        <img src="assets/MainLogo.svg" alt="MainLogo" />
+        <div id="main-footer">
+          <div id="footer-logos">
+            <div class="logo-card">
+              <div
+                style="
+                  background: url(&quot;assets/footerLogo1.svg&quot;);
+                  width: 91px;
+                  height: 40px;
+                "
+              ></div>
+              <p>4.5/5 rating on Lorem</p>
+            </div>
+            <div class="logo-card">
+              <div
+                style="
+                  background: url(&quot;assets/footerLogo2.svg&quot;);
+                  width: 73px;
+                  height: 40px;
+                "
+              ></div>
+              <p>9/10 rating on Ipsum</p>
+            </div>
+            <div class="logo-card">
+              <div
+                style="
+                  background: url(&quot;assets/footerLogo3.svg&quot;);
+                  width: 76px;
+                  height: 40px;
+                "
+              ></div>
+              <p>4.5/5 Rating on dorel</p>
+            </div>
+          </div>
+          <div id="footer-links">
+            <div id="quick-links">
+              <h3>Quick Links</h3>
+              <div class="link-div">
+                <p>Home</p>
+                <p>Skills</p>
+                <p>Education</p>
+                <p>Projects</p>
+                <p>Recommendations</p>
+              </div>
+            </div>
+            <div id="portfolio-links">
+              <h3>Portfolio</h3>
+              <div class="link-div">
+                <p>Frontend Development</p>
+                <p>Backend Development</p>
+                <p>Website Design</p>
+                <p>Machine Learning</p>
+                <p>Problem Solving & DSA</p>
+              </div>
+            </div>
+            <div id="connect-links">
+              <h3>Connect</h3>
+              <div id="socials">
+                <div
+                  style="
+                    width: 100px;
+                    background: url(&quot;assets/linkedin.svg&quot;);
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 125px;
+                    background: url(&quot;assets/instagram.svg&quot;);
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 107px;
+                    background: url(&quot;assets/facebook.svg&quot;);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <img src="assets/copyright-circle.svg" alt="copyright" />
+        <p>2024 Copyright, All right reserved</p>
+      </div>
+    </div>
+  </body>
+  <script src="javascript/skills.js"></script>
+  <script src="javascript/modal.js"></script>
+</html>
