@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Assignment Round</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav>
+        <h1 style="font-size: 20px">Project Planner</h1>
+        <button id="add-form">Add Project</button>
+      </nav>
+
+      <form id="skill-form">
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Enter Project Title"
+          required="true"
+        />
+        <input
+          type="text"
+          id="desc"
+          name="title"
+          placeholder="Enter Project Description"
+          required="true"
+        />
+        <div id="btns">
+          <button type="submit" id="add-skill-button">Add</button>
+          <button type="reset" id="cancel-button">Cancel</button>
+        </div>
+      </form>
+
+      <div id="active-projects">
+        <h1 style="font-size: 15px">Active Projects</h1>
+        <div id="no-result">No RESULTS TO SHOW</div>
+        <div id="active-cards-section" class="cards-section"></div>
+      </div>
+
+      <div id="finished-projects">
+        <h1 style="font-size: 15px">Finished Projects</h1>
+        <div id="finished-cards-section" class="cards-section">
+          <div class="card" id="card-1">
+            <div>
+              <button>X</button>
+            </div>
+            <div class="card-content">
+              <h1 id="title">Finish the project within deadline</h1>
+              <p id="description">
+                Try and finish the project within the deadline
+              </p>
+            </div>
+            <button id="activate-button">Activate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
